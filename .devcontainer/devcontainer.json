@@ -3,10 +3,10 @@
         "dockerfile": "Dockerfile",
         "context": "..",
         "args": {
-            //"REMOTE_USER": "${localEnv:USER}"
+            "REMOTE_USER": "${localEnv:USER}"
         }
     },
-    //"remoteUser": "${localEnv:USER}",
+    "remoteUser": "${localEnv:USER}",
     "workspaceMount": "source=projects,target=/workspaces,type=volume",
     "workspaceFolder": "/workspaces",
     "customizations": {
